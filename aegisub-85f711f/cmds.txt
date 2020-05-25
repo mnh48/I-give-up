@@ -1,0 +1,370 @@
+/home/mnh48/Programs/aegisub/po/Makefile:15: recipe for target '/home/mnh48/Programs/aegisub/po/pt_PT.mo' failed
+make: *** [/home/mnh48/Programs/aegisub/po/pt_PT.mo] Error 127
+mnh48@localhost:~/Programs/aegisub$ ./autogen.sh
+Running autoreconf...
+autoreconf: Entering directory `.'
+autoreconf: running: autopoint --force
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory `.'
+Now run ./configure and then make to build Aegisub
+mnh48@localhost:~/Programs/aegisub$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking whether BUILD_CREDIT has been set... no
+checking for GNU make... make
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for version... git repo not found and no cached git_version.h
+mnh48@localhost:~/Programs/aegisub$ make
+header.mk:5: /home/mnh48/Programs/aegisub/Makefile.inc: No such file or directory
+make: *** No rule to make target '/home/mnh48/Programs/aegisub/Makefile.inc'.  Stop.
+Running autoreconf...
+autoreconf: Entering directory `.'
+autoreconf: running: autopoint --force
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory `.'
+Now run ./configure and then make to build Aegisub
+mnh48@localhost:~/Programs/aegisub$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking whether BUILD_CREDIT has been set... no
+checking for GNU make... make
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for version... git repo not found and no cached git_version.h
+mnh48@localhost:~/Programs/aegisub$ make
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/pt_PT.mo /home/mnh48/Programs/aegisub/po/pt_PT.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/be.mo /home/mnh48/Programs/aegisub/po/be.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/sr_RS.mo /home/mnh48/Programs/aegisub/po/sr_RS.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/ja.mo /home/mnh48/Programs/aegisub/po/ja.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/fa.mo /home/mnh48/Programs/aegisub/po/fa.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/vi.mo /home/mnh48/Programs/aegisub/po/vi.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/da.mo /home/mnh48/Programs/aegisub/po/da.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/ca.mo /home/mnh48/Programs/aegisub/po/ca.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/it.mo /home/mnh48/Programs/aegisub/po/it.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/de.mo /home/mnh48/Programs/aegisub/po/de.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/zh_TW.mo /home/mnh48/Programs/aegisub/po/zh_TW.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/fi.mo /home/mnh48/Programs/aegisub/po/fi.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/es.mo /home/mnh48/Programs/aegisub/po/es.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/pt_BR.mo /home/mnh48/Programs/aegisub/po/pt_BR.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/eu.mo /home/mnh48/Programs/aegisub/po/eu.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/pl.mo /home/mnh48/Programs/aegisub/po/pl.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/cs.mo /home/mnh48/Programs/aegisub/po/cs.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/hu.mo /home/mnh48/Programs/aegisub/po/hu.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/sr_RS@latin.mo /home/mnh48/Programs/aegisub/po/sr_RS@latin.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/id.mo /home/mnh48/Programs/aegisub/po/id.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/gl.mo /home/mnh48/Programs/aegisub/po/gl.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/uk_UA.mo /home/mnh48/Programs/aegisub/po/uk_UA.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/ar.mo /home/mnh48/Programs/aegisub/po/ar.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/bg.mo /home/mnh48/Programs/aegisub/po/bg.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/nl.mo /home/mnh48/Programs/aegisub/po/nl.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/ru.mo /home/mnh48/Programs/aegisub/po/ru.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/zh_CN.mo /home/mnh48/Programs/aegisub/po/zh_CN.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/ko.mo /home/mnh48/Programs/aegisub/po/ko.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/fr_FR.mo /home/mnh48/Programs/aegisub/po/fr_FR.po
+/usr/bin/msgfmt -o /home/mnh48/Programs/aegisub/po/el.mo /home/mnh48/Programs/aegisub/po/el.po
+g++ -MMD -MP -I/usr/include -DBOOST_SYSTEM_NO_DEPRECATED `pkg-config --cflags luajit` -I/home/mnh48/Programs/aegisub/libaegisub/include -I/home/mnh48/Programs/aegisub/src -I/usr/lib/aarch64-linux-gnu/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread -Wall -Wextra -Wno-unused-parameter -fno-strict-aliasing -pipe -g -std=c++11 -Wno-c++11-narrowing -Wno-unused-local-typedefs -O3  -include acconf.h  -c -o /home/mnh48/Programs/aegisub/automation/tests/aegisub.o /home/mnh48/Programs/aegisub/automation/tests/aegisub.cpp
+cc1plus: fatal error: acconf.h: No such file or directory
+compilation terminated.
+Makefile.target:100: recipe for target '/home/mnh48/Programs/aegisub/automation/tests/aegisub.o' failed
+make: *** [/home/mnh48/Programs/aegisub/automation/tests/aegisub.o] Error 1
+mnh48@localhost:~/Programs/aegisub$ make
+header.mk:5: /home/mnh48/Programs/aegisub/Makefile.inc: No such file or directory
+make: *** No rule to make target '/home/mnh48/Programs/aegisub/Makefile.inc'.  Stop.
+mnh48@localhost:~/Programs/aegisub$ ./autogen.sh
+Running autoreconf...
+autoreconf: Entering directory `.'
+autoreconf: running: autopoint --force
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: configure.ac: not using Automake
+autoreconf: Leaving directory `.'
+Now run ./configure and then make to build Aegisub
+mnh48@localhost:~/Programs/aegisub$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking whether BUILD_CREDIT has been set... no
+checking for GNU make... make
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for version... git repo not found and no cached git_version.h
+mnh48@localhost:~/Programs/aegisub$ autoscan
+configure.ac: warning: missing AC_CHECK_FUNCS([floor]) wanted by: src/audio_renderer_spectrum.cpp:257
+configure.ac: warning: missing AC_CHECK_FUNCS([ftruncate]) wanted by: libaegisub/common/file_mapping.cpp:151
+configure.ac: warning: missing AC_CHECK_FUNCS([localtime_r]) wanted by: libaegisub/unix/log.cpp:25
+configure.ac: warning: missing AC_CHECK_FUNCS([memchr]) wanted by: vendor/hunspell/src/hunspell/dictmgr.cxx:140
+configure.ac: warning: missing AC_CHECK_FUNCS([memmove]) wanted by: vendor/hunspell/src/hunspell/affixmgr.cxx:299
+configure.ac: warning: missing AC_CHECK_FUNCS([memset]) wanted by: libaegisub/audio/provider.cpp:40
+configure.ac: warning: missing AC_CHECK_FUNCS([mkdir]) wanted by: libaegisub/lua/modules/lfs.cpp:67
+configure.ac: warning: missing AC_CHECK_FUNCS([modf]) wanted by: libaegisub/common/cajun/writer.cpp:73
+configure.ac: warning: missing AC_CHECK_FUNCS([munmap]) wanted by: vendor/luajit/src/lj_alloc.c:240
+configure.ac: warning: missing AC_CHECK_FUNCS([nl_langinfo]) wanted by: vendor/iconv/libcharset/localcharset.c:336
+configure.ac: warning: missing AC_CHECK_FUNCS([pow]) wanted by: src/audio_box.cpp:120
+configure.ac: warning: missing AC_CHECK_FUNCS([realpath]) wanted by: libaegisub/unix/path.cpp:51
+configure.ac: warning: missing AC_CHECK_FUNCS([setlocale]) wanted by: src/aegisublocale.cpp:71
+configure.ac: warning: missing AC_CHECK_FUNCS([sqrt]) wanted by: src/audio_renderer_spectrum.cpp:181
+configure.ac: warning: missing AC_CHECK_FUNCS([strchr]) wanted by: libaegisub/common/calltip_provider.cpp:195
+configure.ac: warning: missing AC_CHECK_FUNCS([strcspn]) wanted by: vendor/luajit/src/host/buildvm_lib.c:348
+configure.ac: warning: missing AC_CHECK_FUNCS([strdup]) wanted by: libaegisub/lua/modules/lfs.cpp:38
+configure.ac: warning: missing AC_CHECK_FUNCS([strerror]) wanted by: vendor/luajit/src/lib_aux.c:40
+configure.ac: warning: missing AC_CHECK_FUNCS([strndup]) wanted by: libaegisub/include/libaegisub/lua/ffi.h:49
+configure.ac: warning: missing AC_CHECK_FUNCS([strpbrk]) wanted by: vendor/luajit/src/lib_string.c:528
+configure.ac: warning: missing AC_CHECK_FUNCS([strrchr]) wanted by: vendor/luajit/src/lib_package.c:87
+configure.ac: warning: missing AC_CHECK_FUNCS([strstr]) wanted by: src/gl_wrap.cpp:297
+configure.ac: warning: missing AC_CHECK_FUNCS([strtol]) wanted by: src/ass_override.cpp:71
+configure.ac: warning: missing AC_CHECK_FUNCS([strtoul]) wanted by: vendor/luajit/src/lib_base.c:288
+configure.ac: warning: missing AC_CHECK_FUNCS([uname]) wanted by: vendor/luajit/src/lib_jit.c:580
+configure.ac: warning: missing AC_CHECK_HEADERS([fcntl.h]) wanted by: libaegisub/unix/fs.cpp:23
+configure.ac: warning: missing AC_CHECK_HEADERS([langinfo.h]) wanted by: vendor/iconv/libcharset/localcharset.c:49
+configure.ac: warning: missing AC_CHECK_HEADERS([libintl.h]) wanted by: vendor/iconv/libcharset/relocatable.c:58
+configure.ac: warning: missing AC_CHECK_HEADERS([limits.h]) wanted by: build/zlib/zconf.h:394
+configure.ac: warning: missing AC_CHECK_HEADERS([locale.h]) wanted by: vendor/iconv/libcharset/localcharset.c:52
+configure.ac: warning: missing AC_CHECK_HEADERS([stddef.h]) wanted by: build/zlib/zconf.h:433
+configure.ac: warning: missing AC_CHECK_HEADERS([sys/ioctl.h]) wanted by: src/audio_player_oss.cpp:46
+configure.ac: warning: missing AC_CHECK_HEADERS([sys/param.h]) wanted by: src/agi_pre.h:97
+configure.ac: warning: missing AC_CHECK_HEADERS([wchar.h]) wanted by: vendor/hunspell/src/hunspell/csutil.cxx:22
+configure.ac: warning: missing AC_CHECK_HEADER_STDBOOL wanted by: build/boost/locale_stubs.cpp:28
+configure.ac: warning: missing AC_CHECK_TYPES([ptrdiff_t]) wanted by: libaegisub/common/parser.cpp:220
+configure.ac: warning: missing AC_C_INLINE wanted by: build/libass/dirent.h:4
+configure.ac: warning: missing AC_FUNC_ALLOCA wanted by: src/MatroskaParser.c:1345
+configure.ac: warning: missing AC_FUNC_ERROR_AT_LINE wanted by: libaegisub/include/libaegisub/lua/utils.h:37
+configure.ac: warning: missing AC_FUNC_FSEEKO wanted by: vendor/luajit/src/lib_io.c:345
+configure.ac: warning: missing AC_FUNC_MALLOC wanted by: build/freetype2/ftsystem.cpp:53
+configure.ac: warning: missing AC_FUNC_MBRTOWC wanted by: vendor/iconv/libiconv/loop_wchar.h:31
+configure.ac: warning: missing AC_FUNC_MKTIME wanted by: vendor/luajit/src/lib_os.c:257
+configure.ac: warning: missing AC_FUNC_MMAP wanted by: vendor/luajit/src/lj_alloc.c:192
+configure.ac: warning: missing AC_FUNC_REALLOC wanted by: build/freetype2/ftsystem.cpp:70
+configure.ac: warning: missing AC_FUNC_STRCOLL wanted by: vendor/luajit/src/host/minilua.c:4820
+configure.ac: warning: missing AC_FUNC_STRTOD wanted by: vendor/luajit/src/host/buildvm_lib.c:217
+configure.ac: warning: missing AC_PROG_AWK wanted by: po/stats.sh:6
+configure.ac: warning: missing AC_PROG_LN_S wanted by: tools/osx-dmg.sh:37
+configure.ac: warning: missing AC_TYPE_INT16_T wanted by: libaegisub/audio/provider.cpp:32
+configure.ac: warning: missing AC_TYPE_INT32_T wanted by: libaegisub/audio/provider.cpp:113
+configure.ac: warning: missing AC_TYPE_INT64_T wanted by: libaegisub/audio/provider.cpp:25
+configure.ac: warning: missing AC_TYPE_INT8_T wanted by: vendor/luajit/src/lj_asm_x86.h:2460
+configure.ac: warning: missing AC_TYPE_MODE_T wanted by: libaegisub/common/file_mapping.cpp:34
+configure.ac: warning: missing AC_TYPE_SIZE_T wanted by: libaegisub/ass/dialogue_parser.cpp:37
+configure.ac: warning: missing AC_TYPE_UINT16_T wanted by: libaegisub/audio/provider_pcm.cpp:179
+configure.ac: warning: missing AC_TYPE_UINT32_T wanted by: libaegisub/audio/provider_pcm.cpp:95
+configure.ac: warning: missing AC_TYPE_UINT64_T wanted by: libaegisub/audio/provider_hd.cpp:54
+configure.ac: warning: missing AC_TYPE_UINT8_T wanted by: libaegisub/audio/provider_convert.cpp:31
+mnh48@localhost:~/Programs/aegisub$ autoreconf
+mnh48@localhost:~/Programs/aegisub$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking whether BUILD_CREDIT has been set... no
+checking for GNU make... make
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for version... git repo not found and no cached git_version.h
+mnh48@localhost:~/Programs/aegisub$ make
+header.mk:5: /home/mnh48/Programs/aegisub/Makefile.inc: No such file or directory
+make: *** No rule to make target '/home/mnh48/Programs/aegisub/Makefile.inc'.  Stop.
+mnh48@localhost:~/Programs/aegisub$ aclocal
+mnh48@localhost:~/Programs/aegisub$ autoheader
+mnh48@localhost:~/Programs/aegisub$ autoconf
+mnh48@localhost:~/Programs/aegisub$ ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking whether BUILD_CREDIT has been set... no
+checking for GNU make... make
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for version... git repo not found and no cached git_version.h
+mnh48@localhost:~/Programs/aegisub$ make
+header.mk:5: /home/mnh48/Programs/aegisub/Makefile.inc: No such file or directory
+make: *** No rule to make target '/home/mnh48/Programs/aegisub/Makefile.inc'.  Stop.
+mnh48@localhost:~/Programs/aegisub$ make
+g++ -MMD -MP -I/usr/include -DBOOST_SYSTEM_NO_DEPRECATED `pkg-config --cflags luajit` -I/home/mnh48/Programs/aegisub/libaegisub/include -I/home/mnh48/Programs/aegisub/src -I/usr/lib/aarch64-linux-gnu/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread -Wall -Wextra -Wno-unused-parameter -fno-strict-aliasing -pipe -g -std=c++11 -Wno-c++11-narrowing -Wno-unused-local-typedefs -O3  -include acconf.h  -c -o /home/mnh48/Programs/aegisub/automation/tests/aegisub.o /home/mnh48/Programs/aegisub/automation/tests/aegisub.cpp
+cc1plus: fatal error: acconf.h: No such file or directory
+compilation terminated.
+Makefile.target:100: recipe for target '/home/mnh48/Programs/aegisub/automation/tests/aegisub.o' failed
+make: *** [/home/mnh48/Programs/aegisub/automation/tests/aegisub.o] Error 1

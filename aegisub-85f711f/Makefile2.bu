@@ -1,0 +1,142 @@
+#########################
+# AEGISUB FEATURE SUPPORT
+#########################
+HAVE_ALSA       = yes
+HAVE_HUNSPELL   = yes
+HAVE_OPENAL     = no
+HAVE_OSS        = yes
+HAVE_PORTAUDIO  = no
+HAVE_FFMS2      = yes
+HAVE_LIBPULSE   = yes
+
+##############
+# BUILD OUTPUT
+##############
+PROGRAM := $(PROGRAM)
+LIB := $(LIB)
+
+###################
+# PLATFORM SETTINGS
+###################
+BUILD_DARWIN  = no
+
+#######
+# FLAGS
+#######
+CFLAGS              =  -Wall -Wextra -Wno-unused-parameter -std=gnu99 -pipe -g -Wno-unused-local-typedefs -O3
+CXXFLAGS            =  -Wall -Wextra -Wno-unused-parameter -fno-strict-aliasing -pipe -g -std=c++11 -Wno-c++11-narrowing -Wno-unused-local-typedefs -O3
+CPPFLAGS            = 
+CFLAGS_DEP          = -MMD -MP
+LIBS                = -ldl -lm 
+LDFLAGS             = 
+INSTALL_FLAGS       = -m 644
+LIB_SHARED_LINK     = -shared -Wl,-soname -Wl,$(LIB_SHARED_FULL)
+LIB_SHARED_LINK_OSX = -dynamiclib -Wl,-undefined -Wl,dynamic_lookup -compatibility_version $(LIB_VERSION) -current_version $(LIB_VERSION) -Wl,-single_module -mmacosx-version-min=10.7 -install_name ${CURDIR}/$(LIB_SHARED_FULL)
+
+#########
+# STRINGS
+#########
+AEGISUB_COMMAND      = aegisub-3.2
+AEGISUB_CATALOG      = aegisub-32
+BUILD_DATE           = 2020-05-25 13:57 UTC
+BUILD_VERSION_STRING = 3.2.2
+
+#######
+# PATHS
+#######
+prefix        = ${P_PREFIX}
+exec_prefix   = ${P_PREFIX_EXEC}
+datarootdir   = ${P_DATAROOT}
+P_PREFIX      = /usr/local
+P_PREFIX_EXEC = ${prefix}
+P_BINDIR      = ${exec_prefix}/bin
+P_DATAROOT    = ${prefix}/share
+P_LOCALE      = ${datarootdir}/locale
+
+P_DESKTOP     = ${prefix}/share/applications
+P_ICON        = ${prefix}/share/icons
+P_DATA        = $(P_DATAROOT)/aegisub/
+
+###############
+# LIBRARY FLAGS
+###############
+CFLAGS_WX          = -I/usr/lib/aarch64-linux-gnu/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread
+CXXFLAGS_WX        = -I/usr/lib/aarch64-linux-gnu/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread
+CPPFLAGS_WX        = -I/usr/lib/aarch64-linux-gnu/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__
+LIBS_WX            = -L/usr/lib/aarch64-linux-gnu -pthread   -lwx_gtk2u_gl-3.0 -lwx_gtk2u_stc-3.0 -lwx_gtk2u_xrc-3.0 -lwx_gtk2u_html-3.0 -lwx_gtk2u_qa-3.0 -lwx_gtk2u_adv-3.0 -lwx_gtk2u_core-3.0 -lwx_baseu_xml-3.0 -lwx_baseu_net-3.0 -lwx_baseu-3.0  -lz
+
+CPPFLAGS_BOOST     = -I/usr/include -DBOOST_SYSTEM_NO_DEPRECATED
+LIBS_BOOST         = -L/usr/lib/aarch64-linux-gnu/ -lboost_filesystem -lboost_locale -lboost_regex -lboost_system -lboost_thread -lboost_chrono
+
+CFLAGS_FFMS2       = -I/usr/include/aarch64-linux-gnu
+CFLAGS_FFTW3       = 
+CFLAGS_FONTCONFIG  = -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/libpng16
+CFLAGS_FREETYPE    = -I/usr/include/freetype2 -I/usr/include/libpng16
+CFLAGS_GL          = 
+CFLAGS_HUNSPELL    = -I/usr/include/hunspell
+CFLAGS_ICONV       = 
+CFLAGS_ICU         = 
+CFLAGS_LIBASS      = -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/freetype2 -I/usr/include/libpng16
+CFLAGS_LIBPULSE    = -D_REENTRANT
+CFLAGS_LUA         = `pkg-config --cflags luajit`
+# @LUAJIT_CFLAGS@
+# -I$(TOP)vendor/luajit/include
+CFLAGS_OPENAL      = 
+CFLAGS_OSS         = 
+CFLAGS_PORTAUDIO   = 
+CFLAGS_PTHREAD     = -pthread
+CFLAGS_UCHARDET    = -I$(TOP)vendor/universalchardet
+
+LIBS_ALSA          = -lasound -lrt
+LIBS_FFMS2         = -lffms2
+LIBS_FFTW3         = -lfftw3
+LIBS_FONTCONFIG    = -lfontconfig -lfreetype
+LIBS_FREETYPE      = -lfreetype
+LIBS_GL            = -lGL 
+LIBS_HUNSPELL      = -lhunspell-1.6
+LIBS_ICONV         = 
+LIBS_ICU           = -licuuc -licudata -licui18n -licuuc -licudata
+LIBS_LIBASS        = -lass
+LIBS_LIBPULSE      = -lpulse
+LIBS_LUA           = `pkg-config --libs luajit`
+# @LUAJIT_LIBS@
+# $(TOP)vendor/luajit/src/libluajit.a
+LIBS_OPENAL        = 
+LIBS_PORTAUDIO     = 
+LIBS_PTHREAD       = 
+
+ifeq (yes, $(BUILD_DARWIN))
+LIBS_LUA           = `pkg-config --libs luajit`
+# @LUAJIT_LIBS@
+# $(TOP)vendor/luajit/src/libluajit-aegisub.so
+endif
+
+FONTCONFIG_CONF_DIR = /etc/fonts
+
+#####################
+# DEBUG / DEVELOPMENT
+#####################
+PRECOMPILED_HEADER = yes
+
+##########
+# BINARIES
+##########
+BIN_AR       = ar
+BIN_RANLIB   = ranlib
+BIN_LN       = ln
+BIN_RM       = rm
+BIN_SHELL    = /bin/bash
+BIN_MV       = mv
+BIN_SED      = sed
+BIN_INSTALL  = /usr/bin/install -c
+BIN_MSGMERGE = /usr/bin/msgmerge
+BIN_XGETTEXT = /usr/bin/xgettext
+BIN_MSGFMT   = /usr/bin/msgfmt
+BIN_CC       = gcc
+BIN_CXX      = g++
+BIN_CP       = cp
+BIN_MKDIR    = mkdir
+BIN_MKDIR_P  = mkdir -p
+BIN_ECHO     = echo
+BIN_TOUCH    = touch
+BIN_WX_CONFIG = /usr/bin/wx-config
